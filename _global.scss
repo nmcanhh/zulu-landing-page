@@ -21,6 +21,8 @@ body {
     font-family: "Poppins", sans-serif;
     font-style: 16px;
     line-height: 1;
+    background-color: #fff;
+    color: $gray-dark;
 }
 
 .wrapper {
@@ -51,5 +53,45 @@ body {
     &--outline {
         border: solid 1px;
         color: $gray-blur;
+    }
+}
+
+.block {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 1.4;
+    &-caption {
+        text-transform: uppercase;
+        margin-bottom: 40px;
+        position: relative;
+        display: inline-block;
+        padding: 0 10px;
+    }
+    &-caption:before,
+    &-caption:after {
+        content: "";
+        position: absolute;
+        height: 2px;
+        width: 30px;
+        background-color: $primary-color;
+        top: 50%;
+    }
+    &-caption:before {
+        left: 0;
+        transform: translateX(-100%) translateY(-50%);
+    }
+    &-caption:after {
+        right: 0;
+        transform: translateX(100%) translateY(-50%);
+    }
+    &-heading {
+        line-height: 1.4;
+        font-size: 50px;
+    }
+    span {
+        display: block;
     }
 }

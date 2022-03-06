@@ -20,6 +20,8 @@ body {
   font-family: "Poppins", sans-serif;
   font-style: 16px;
   line-height: 1;
+  background-color: #fff;
+  color: #272e35;
 }
 
 .wrapper {
@@ -51,6 +53,45 @@ body {
 .button--outline {
   border: solid 1px;
   color: #a5b2c3;
+}
+
+.block {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  line-height: 1.4;
+}
+.block-caption {
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  position: relative;
+  display: inline-block;
+  padding: 0 10px;
+}
+.block-caption:before, .block-caption:after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 30px;
+  background-color: #579aff;
+  top: 50%;
+}
+.block-caption:before {
+  left: 0;
+  transform: translateX(-100%) translateY(-50%);
+}
+.block-caption:after {
+  right: 0;
+  transform: translateX(100%) translateY(-50%);
+}
+.block-heading {
+  line-height: 1.4;
+  font-size: 50px;
+}
+.block span {
+  display: block;
 }
 
 .header {
@@ -109,6 +150,63 @@ body {
   margin-right: 40px;
   padding-left: 25px;
   padding-right: 25px;
+}
+
+.work {
+  padding-top: 145px;
+  padding-bottom: 50px;
+}
+.work-list {
+  padding-top: 90px;
+  display: flex;
+  justify-content: space-between;
+}
+.work-item {
+  width: calc(33.33% - 46.67px);
+  padding: 40px 30px;
+  border: 1px solid #F4F4F4;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  line-height: 1.4;
+  transition: all 0.2s linear;
+}
+.work-item:hover {
+  border-color: transparent;
+  box-shadow: 0 0 50px 10px rgba(0, 0, 0, 0.03);
+}
+.work-more {
+  transition: all 0.2s linear;
+}
+.work-item:hover .work-more {
+  background-color: #579aff;
+  border-color: #579aff;
+  color: white;
+}
+.work-image {
+  padding-bottom: 35px;
+  max-height: 115px;
+}
+.work-title {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.work-desc {
+  font-weight: 300;
+  margin-bottom: 35px;
+  color: #868d93;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  max-width: 100%;
+  word-break: break-word;
 }
 
 /*# sourceMappingURL=styles.css.map */
