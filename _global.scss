@@ -87,11 +87,27 @@ body {
         right: 0;
         transform: translateX(100%) translateY(-50%);
     }
+    &-caption--left {
+        padding-left: 40px;
+        margin-bottom: 30px;
+    }
+    &-caption--left:after {
+        display: none
+    }
+    &-caption--left:before {
+        transform: none;
+    }
     &-heading {
         line-height: 1.4;
         font-size: 50px;
+        span {
+            display: block;
+        }
     }
-    span {
-        display: block;
-    }
+}
+
+.text {
+    font-weight: 300;
+    color: $gray;
+    line-height: 1.6;
 }

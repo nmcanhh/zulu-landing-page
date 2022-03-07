@@ -86,12 +86,28 @@ body {
   right: 0;
   transform: translateX(100%) translateY(-50%);
 }
+.block-caption--left {
+  padding-left: 40px;
+  margin-bottom: 30px;
+}
+.block-caption--left:after {
+  display: none;
+}
+.block-caption--left:before {
+  transform: none;
+}
 .block-heading {
   line-height: 1.4;
   font-size: 50px;
 }
-.block span {
+.block-heading span {
   display: block;
+}
+
+.text {
+  font-weight: 300;
+  color: #868d93;
+  line-height: 1.6;
 }
 
 .header {
@@ -125,6 +141,7 @@ body {
 .banner {
   display: flex;
   align-items: center;
+  padding-top: 50px;
 }
 .banner-info {
   width: 35%;
@@ -142,8 +159,6 @@ body {
   display: block;
 }
 .banner-desc {
-  line-height: 1.5;
-  font-weight: 300;
   margin-bottom: 50px;
 }
 .banner-links .button:first-child {
@@ -196,9 +211,7 @@ body {
   margin-bottom: 30px;
 }
 .work-desc {
-  font-weight: 300;
   margin-bottom: 35px;
-  color: #868d93;
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
@@ -207,6 +220,24 @@ body {
   width: 100%;
   max-width: 100%;
   word-break: break-word;
+}
+
+.intro {
+  display: flex;
+  align-items: center;
+  padding: 110px 0 160px;
+}
+.intro > * {
+  width: 50%;
+}
+
+.intro-content {
+  padding-right: 130px;
+}
+
+.intro-desc {
+  margin-top: 40px;
+  margin-bottom: 30px;
 }
 
 /*# sourceMappingURL=styles.css.map */
